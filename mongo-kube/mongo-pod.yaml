@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+  labels: 
+    app: mongo
+spec: 
+  containers:
+    - name: mongo-db
+      image: mongo:4
+      env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          value: admin
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          value: password
