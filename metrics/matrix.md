@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/linuxacademy/content-cka-resources/master/metrics-server-components.yaml

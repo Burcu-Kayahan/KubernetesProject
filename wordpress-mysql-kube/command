@@ -1,0 +1,14 @@
+3  ls -la
+    4  kubectl apply -f wordpress-pv.yaml -f mysql-pv.yaml -f wordpress-pvc.yaml -f mysql-pvc.yaml
+    5  kubectl get pv,pvc
+    6  kubectl apply secret.yaml
+    7  kubectl apply -f secret.yaml
+    8  kubectl get svc
+    9  kubectl apply -f wordpress-svc.yaml -f mysql-svc.yaml
+   10  kubectl apply -f mysql-deployment.yaml
+   11  kubectl get deploy,po
+   12  kubectl apply -f wordpress-deployment.yaml
+   13  kubectl get deploy,po
+   14  kubectl get svc
+   15  kubectl describe svc wordpress
+   16  kubectl describe svc wordpress-mysql
